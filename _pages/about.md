@@ -15,22 +15,22 @@ You can find my CV here: [CV](CV-USTC-ZhenyuBo).
 
 You can contact me through [Email](mailto:bzy1117@mail.ustc.edu.cn) or [Wechat]((../images/wechat.jpg))
 
-Honors
-======
+### Honors
+
 * National Scholarship(2024)
 * Jianghuai NIO Scholarship(2023)
 * Hua Xia Talent Scholarship(2023, 2024)
 * WorldQuant International Quant Championship Gold(2023)
 
-Research Experience
-======
-1. Cognitive Diagnosis Optimization
+### Research Experience
+
+#### ****Cognitive Diagnosis Optimization****
 
 Now I'm working at at [CODIA](https://code.bdaa.pro/dashboard/) team which focus on diagnosing the student's ability level based on the student's historical answer records. I have successfully improved the fairness and accuracy of the prediction of the model.
 
-2. [Code Assistant](https://github.com/Zhenyu-Bo/Code-Assistant)
+#### Code Assistant
 
-It is one of my curriculum projects and I have two teammates who can be found via the github repository.
+It is one of my curriculum projects and can be accessed via [Code-Assistant](https://github.com/Zhenyu-Bo/Code-Assistant).
 
 **Motivation:**
 
@@ -41,9 +41,9 @@ It is one of my curriculum projects and I have two teammates who can be found vi
 
 My strategy is using RAG to provide precise information which LLMs exactly need to improve code awareness of LLM and reduce context overhead. To be more specific yet concise, I construct a function call dependency table for files in the code repository, then extract all relevant functions based on user requests and inject them as prompts into LLMs.
 
-1. [FreeRTOS Security Enhancement](https://github.com/OSH-2024/mustrust)
+#### FreeRTOS Security Enhancement
 
-It is also one of my curriculum projects and I have four teammates who can be found via the github repository.
+It is also one of my curriculum projects and can be accessed via [mustrust](https://github.com/OSH-2024/mustrust)
 
 **Description:**
 
