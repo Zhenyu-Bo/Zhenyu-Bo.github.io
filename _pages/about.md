@@ -24,19 +24,22 @@ Honors
 Research Experience
 ======
 **1. Cognitive Diagnosis Optimization**
+
 Now I'm working at at [CODIA](https://code.bdaa.pro/dashboard/) team which focus on diagnosing the student's ability level based on the student's historical answer records. I have successfully improved the fairness and accuracy of the prediction of the model.
 
 **2. LLM-assisted Code Repair**
+
 It is one of my curriculum projects and can be accessed via [Code-Assistant](https://github.com/Zhenyu-Bo/Code-Assistant).
 
 **Motivation:**
 * LLMs lack awareness of untrained repositories, making it difficult to retrieve code information relevant to current needs.
-* code repositories often contain massive files, and token limits combined with models' constrained long-context comprehension prevent inputting all information as prompts. 
+* Code repositories often contain massive files, and token limits combined with models' constrained long-context comprehension prevent inputting all information as prompts. 
 
 **Solution:**
 My strategy is using RAG to provide precise information which LLMs exactly need to improve code awareness of LLM and reduce context overhead. To be more specific yet concise, I construct a function call dependency table for files in the code repository, then extract all relevant functions based on user requests and inject them as prompts into LLMs.
 
 **3. FreeRTOS Security Enhancement**
+
 It is also one of my curriculum projects and can be accessed via [mustrust](https://github.com/OSH-2024/mustrust).
 
 **Description:**
