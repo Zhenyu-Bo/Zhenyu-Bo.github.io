@@ -26,7 +26,7 @@ Research Experience
 **1. Cognitive Diagnosis Optimization**
 Now I'm working at at [CODIA](https://code.bdaa.pro/dashboard/) team which focus on diagnosing the student's ability level based on the student's historical answer records. I have successfully improved the fairness and accuracy of the prediction of the model.
 
-**2. Code Assistant**
+**2. LLM-assisted Code Repair**
 It is one of my curriculum projects and can be accessed via [Code-Assistant](https://github.com/Zhenyu-Bo/Code-Assistant).
 
 **Motivation:**
