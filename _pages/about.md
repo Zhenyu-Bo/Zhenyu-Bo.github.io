@@ -38,5 +38,6 @@ My strategy is using RAG to provide precise information which LLMs exactly need 
 
 ## 3. FreeRTOS Security Enhancement
 It is also one of my curriculum projects and can be accessed via [mustrust](https://github.com/OSH-2024/mustrust)
+
 **Description:**
 We use Rust to rewrite the core code of FreeRTOS (using C) to improve security.
