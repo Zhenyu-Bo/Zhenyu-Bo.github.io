@@ -14,17 +14,19 @@ My research lies in **AI Agent**, **Multimodal Learning**, etc. I am currently a
 You can find my CV here: [CV](../files/CV-USTC-ZhenyuBo.pdf).
 You can contact me through [Email](mailto:bzy1117@mail.ustc.edu.cn) or [Wechat](../files/wechat.jpg)
 
-## Honors
+Honors
+======
 * National Scholarship(2024)
 * Jianghuai NIO Scholarship(2023)
 * Hua Xia Talent Scholarship(2023, 2024)
 * WorldQuant International Quant Championship Gold(2023)
 
-## Research Experience
-### Cognitive Diagnosis Optimization
+Research Experience
+======
+## 1. Cognitive Diagnosis Optimization
 Now I'm working at at [CODIA](https://code.bdaa.pro/dashboard/) team which focus on diagnosing the student's ability level based on the student's historical answer records. I have successfully improved the fairness and accuracy of the prediction of the model.
 
-### Code Assistant
+## 2. Code Assistant
 It is one of my curriculum projects and can be accessed via [Code-Assistant](https://github.com/Zhenyu-Bo/Code-Assistant).
 
 **Motivation:**
@@ -34,7 +36,7 @@ It is one of my curriculum projects and can be accessed via [Code-Assistant](htt
 **Solution:**
 My strategy is using RAG to provide precise information which LLMs exactly need to improve code awareness of LLM and reduce context overhead. To be more specific yet concise, I construct a function call dependency table for files in the code repository, then extract all relevant functions based on user requests and inject them as prompts into LLMs.
 
-### FreeRTOS Security Enhancement
+## 3. FreeRTOS Security Enhancement
 It is also one of my curriculum projects and can be accessed via [mustrust](https://github.com/OSH-2024/mustrust)
 **Description:**
 We use Rust to rewrite the core code of FreeRTOS (using C) to improve security.
