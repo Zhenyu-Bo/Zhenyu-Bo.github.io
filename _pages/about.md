@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I’m a junior student from the School of Computer Science at University of Science and Technology of China(USTC) and I'm a member of Huaxia Computer Science and Technology Elite Program. In addition to my major in computer science, I also minor in finance.
+I'm a junior student from the School of Computer Science at University of Science and Technology of China(USTC) and I'm a member of [Huaxia Computer Science and Technology Elite Program](https://catalog.ustc.edu.cn/program/t15). In addition to my major in computer science, I also minor in finance.
 
 My research lies in **AI Agent**, **Computer Vision**, **Deep Learning**, **Multimodal Learning**, etc. I am currently an undergraduate at USTC and working at [CODIA](https://code.bdaa.pro/) team.
 
