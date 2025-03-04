@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Zhenyu Bo/Personal Homepage"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Zhenyu Bo"
 description              : &description "a junior student from USTC"
