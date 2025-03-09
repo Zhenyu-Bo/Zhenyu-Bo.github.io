@@ -11,7 +11,7 @@ I'm a junior student from the School of Computer Science at University of Scienc
 
 My research interest lies in **AIGC**, **Computer Vision**, **LLM**, **Multimodal Learning**, etc. 
 
-To be honest, there are so many directions in the computer field and I've only touched a few of them. I ruled out a lot of directions based on my first instinct, and based on my own superficial understanding, I thought I might be interested in certain directions. Therefore, I think I think the above description of my research interest is not comprehensive but it is the best judgment I can make at this time.
+To be honest, there are so many directions in the computer field and I've only touched a few of them. I ruled out a lot of directions based on my first instinct, and based on my own superficial understanding, I thought I might be interested in certain directions. Therefore, I think the above descriptions of my research interest is not comprehensive but it is the best judgment I can make at this time.
 
 <!-- I am currently an undergraduate at USTC and working at [CODIA](https://code.bdaa.pro/) team. -->
 You can find my CV here: [CV](../files/CV-USTC-ZhenyuBo.pdf).
