@@ -9,8 +9,11 @@ redirect_from:
 
 I'm a junior student from the School of Computer Science at University of Science and Technology of China(USTC) and I'm a member of [Huaxia Computer Science and Technology Elite Program](https://catalog.ustc.edu.cn/program/t15). In addition to my major in computer science, I also minor in finance.
 
-My research lies in **AIGC**, **Computer Vision**, **LLM**, **Multimodal Learning**, etc. I am currently an undergraduate at USTC and working at [CODIA](https://code.bdaa.pro/) team.
+My research interest lies in **AIGC**, **Computer Vision**, **LLM**, **Multimodal Learning**, etc. 
 
+To be honest, there are so many directions in the computer field and I've only touched a few of them. I ruled out a lot of directions based on my first instinct, and based on my own superficial understanding, I thought I might be interested in certain directions. Therefore, I think I think the above description of my research interest is not comprehensive but it is the best judgment I can make at this time.
+
+<!-- I am currently an undergraduate at USTC and working at [CODIA](https://code.bdaa.pro/) team. -->
 You can find my CV here: [CV](../files/CV-USTC-ZhenyuBo.pdf).
 You can contact me through [Email](mailto:bzy1117@mail.ustc.edu.cn).
 
