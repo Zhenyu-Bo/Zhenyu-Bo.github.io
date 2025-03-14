@@ -9,11 +9,11 @@ redirect_from:
 
 I'm a junior student from the School of Computer Science at University of Science and Technology of China(USTC) and I'm a member of [Huaxia Computer Science and Technology Elite Program](https://catalog.ustc.edu.cn/program/t15). In addition to my major in computer science, I also minor in finance.
 
-**I am actively seeking a PhD position for 2026 Fall admission. If you have any information, please contact me!**
+<!-- **I am actively seeking a PhD position for 2026 Fall admission. If you have any information, please contact me!** -->
 
 Research Interest
 ======
-My research interest lies in **AIGC**, **Computer Vision**, **LLM**, **Multimodal Learning**, etc. 
+My research interest lies in **Computer Vision**, **LLM**, **NLP**, **Multimodal Learning**, etc. 
 
 To be honest, there are so many directions in the computer field and I've only touched a few of them. I ruled out a lot of directions based on my first instinct, and based on my own superficial understanding, I thought I might be interested in certain directions. Therefore, I think the above descriptions of my research interest is not comprehensive but it is the best judgment I can make at this time.
 
