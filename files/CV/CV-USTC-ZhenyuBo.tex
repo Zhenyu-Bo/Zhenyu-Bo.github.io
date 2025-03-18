@@ -1,0 +1,330 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=1.0 cm, % seperation between body and page edge from the top
+    bottom=1.0 cm, % seperation between body and page edge from the bottom
+    left=1.7 cm, % seperation between body and page edge from the left
+    right=1.7 cm, % seperation between body and page edge from the right
+    footskip=0.5 cm, % seperation between body and footer
+    % showframe % for debugging 
+]{geometry} % for adjusting page geometry
+\usepackage{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 0, 0} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Zhenyu Bo's CV},
+    pdfauthor={Zhenyu Bo},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{lmodern}
+
+% Some settings:
+\raggedright
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.15cm} % set column seperation
+\pagenumbering{gobble} % no page numbering
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.10 cm,
+        parsep=0.10 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+        0 cm + 0.00001 cm
+    }{
+        0 cm + 0.00001 cm
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 3.95 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+\newcommand{\placelastupdatedtext}{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
+  \AddToShipoutPictureFG*{% Add <stuff> to current page foreground
+    \put(
+        \LenToUnit{\paperwidth-2 cm-0 cm+0.05cm},
+        \LenToUnit{\paperheight-1.0 cm}
+    ){\vtop{{\null}\makebox[0pt][c]{
+        \small\color{gray}\textit{Last updated in September 2024}\hspace{\widthof{Last updated in September 2024}}
+    }}}%
+  }%
+}%
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{$|$}
+
+    \begin{header}
+        \fontsize{25 pt}{25 pt}\selectfont Zhenyu Bo
+
+        \vspace{5 pt}
+
+        \normalsize
+        \mbox{\hrefWithoutArrow{mailto:bzy1117@mail.ustc.edu.cn}{bzy1117@mail.ustc.edu.cn}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{tel:+86 13505606509}{+86 13505606509}}%
+        \kern 5.0 pt%
+        \AND%
+        \kern 5.0 pt%
+        \mbox{\hrefWithoutArrow{https://zhenyu-bo.github.io}{https://zhenyu-bo.github.io}}%
+    \end{header}
+
+    \vspace{5 pt - 0.3 cm}
+
+    \section{{Education}}
+
+        \begin{twocolentry}{
+            Hefei, China
+        }
+            \textbf{University of Science and Technology of China}\end{twocolentry}
+
+        \begin{twocolentry}{
+            Expected May 2026
+        }
+            \textbf{Bachelor of Engineering in Computer Science}\end{twocolentry}
+
+        \textbf{Major:} Computer Science(Member of Hua Xia Talent Program in Computer Science and Technology)\\
+        \begin{onecolentry}
+            \vspace{0.10 cm}
+            \begin{highlights}
+                \item GPA: 3.87/4.3 | 89.94/100 \quad Rank: 12th/171 | Top 7\%
+                \item Core Coursework: Computer Programming A, Data Structure, Introduction to Computing Systems(H), Operating Systems(H), Computer Organization and Design(H),
+                Principles and Techniques of Compiler(H), Computer Networks, Ethics and Practice of Data privacy, Syllabus of Digital Logic Lab
+            \end{highlights}
+        \end{onecolentry}
+
+        % \textbf{Minor:} Finance\\
+        % \begin{onecolentry}
+        %     \vspace{0.10 cm}
+        %     \begin{highlights}
+        %         \item GPA: 3.43/4.3 \quad No class ranking provided
+        %         \item WorldQuant IQC Gold Medalist(2024)
+        %         % \item Coursework: Linear Algebra, Probability Theory, Mathematical Analysis
+        %     \end{highlights}
+        % \end{onecolentry}
+    
+    \section{Honors}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \begin{twocolentry}
+                    {2024} \textbf{National Scholarship (Highest Honor for Chinese Undergraduates, Top 0.2\%)}
+                \end{twocolentry}
+                \item \begin{twocolentry}
+                    {2023} {Jianghuai NIO Scholarship}
+                \end{twocolentry}
+                \item \begin{twocolentry}
+                    {2023, 2024} {Hua Xia Talent Scholarship}
+                \end{twocolentry}
+                % \item \begin{twocolentry}
+                %     {2024} {WorldQuant International Quant Championship Gold}
+                % \end{twocolentry}
+                \item \begin{twocolentry}
+                    {2024} {HarmonyOS Application Developer Advanced Certificationn}
+                \end{twocolentry}
+                \item \begin{twocolentry}
+                    {2024} {OpenHarmony Talent Certification}
+                \end{twocolentry}
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Research Experience}        
+        \textbf{Improve the Fairness and Accuracy of Cognitive Diagnosis}, \textit{State Key Laboratory of Cognitive Intelligence}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \textbf{Fairness}: During the model training process, groups with more data exert greater influence and achieve better fitting performance, which leads to unfair predictions across different groups. 
+                I addressed this by dynamically balancing the ratio of data from each group in training batches, prioritizing underperforming groups to maintain balanced performance, thus enhancing fairness.
+                \item \textbf{Accuracy}: An auxiliary model assesses data reliability through prediction discrepancies with the main model (smaller differences indicate more reliable student data). Based on date reliability, I adjust data weights to reduce noise impact, improving accuracy.
+                % \item Improving accuracy by selecting the data that contributes the most to the gradient (still ongoing).
+            \end{highlights}
+        \end{onecolentry}
+
+
+        \vspace{0.2 cm}
+
+        \textbf{LLM-assisted Code Repair},
+        \textit{https://github.com/Zhenyu-Bo/Code-Assistant}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \textbf{Motivation:} There are two key limitations of LLMs in code assistance: 1. LLMs cannot perceive untrained repositories, failing to retrieve code information relevant to current requirements.
+                        2. Code repositories typically contain numerous files, yet token limits and LLMs' restricted long-context comprehension prevent full codebase integration into prompts.
+                \item \textbf{Strategy}: Use RAG technology: Preprocess the user's codebase, split code files by function units, and build function call graphs. Based on this, retrieve the precise relevant code required by the LLM according to user needs and inject it into the LLM, enhancing code awareness and reducing the amount of code that needs to be input.
+            \end{highlights}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \textbf{FreeRTOS Security Enhancement},
+        \textit{https://github.com/OSH-2024/mustrust}
+
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item Rewriting FreeRTOS core components in Rust to enhance security. The methodology involves modularizing source code functionalities into atomic units prior to systematic reimplementation.
+            \end{highlights}
+        \end{onecolentry}
+    
+    \section{Internship Experience}
+
+        \begin{samepage}
+            \begin{twocolentry}{
+                July - Aug 2024
+            }
+                \textbf{Internship at Huawei}
+            \end{twocolentry}
+
+            \vspace{0.10 cm}
+            \begin{onecolentry}
+                \begin{highlights}
+                    \item I developed audio interface demos for OpenHarmony OS using official API and authored official API documentation.
+                \end{highlights}
+            \end{onecolentry}
+        \end{samepage}
+
+
+    \section{Leadership \& Activities}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \begin{twocolentry}
+                    {May 2023 - May 2024} {Department head of Youth Volunteers Association of School of Life Sciences}
+                \end{twocolentry}
+                \item \begin{twocolentry}
+                    {Sept 2022 - May 2023} {Member of Student Union of School of Life Sciences}
+                \end{twocolentry}
+                % \item Hosted or participated in many volunteer activities
+            \end{highlights}
+        \end{onecolentry}
+
+    \section{Skills}
+        \vspace{0.10 cm}
+        \begin{onecolentry}
+            \begin{highlights}
+                \item \textbf{Programming:} Languages: C (Proficient), C++/Python/Verilog (Advanced), Rust/TypeScript (Familiar)
+                % \item \textbf{Project experience:} I have worked as an intern in Huawei for nearly two months and learned about the development process of large-scale projects.
+                % \item \textbf{Organizing ability:} I have served as a member of the Student Union and the minister of the Youth Association, and have the experience and ability to organize activities and personnel.
+                \item \textbf{Language:} English(IELTS:6.5), Chinese
+                \item \textbf{Finance:} Minor in finance with most core courses completed
+            \end{highlights}
+        \end{onecolentry}
+
+    % \section{Future Research Interests}
+    %     \vspace{0.10 cm}
+    %     \begin{onecolentry}
+    %         \begin{highlights}
+    %             \item \textbf{AGI:} AI with human-level general cognitive abilities, capable of autonomous learning, reasoning, and adaptation across domains to solve complex problems without task-specific training.
+    %             \item \textbf{AI+:} AI combined with other technologies to solve real-world problems, such as AI+Finance, AI+Healthcare, AI+Education, etc.
+    %             \item \textbf{Multimedia technology:} Research on multimedia technology, such as image processing, video processing, etc.
+    %         \end{highlights}
+    %     \end{onecolentry}
+
+\end{document}

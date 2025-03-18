@@ -18,7 +18,7 @@ My research interest lies in **Computer Vision**, **LLM**, **NLP**, **Multimodal
 To be honest, there are so many directions in the computer field and I've only touched a few of them. I ruled out a lot of directions based on my first instinct, and based on my own superficial understanding, I thought I might be interested in certain directions. Therefore, I think the above descriptions of my research interest is not comprehensive but it is the best judgment I can make at this time.
 
 <!-- I am currently an undergraduate at USTC and working at [CODIA](https://code.bdaa.pro/) team. -->
-You can find my CV here: [CV](../files/CV-USTC-ZhenyuBo.pdf).
+You can find my CV here: [CV](../files/CV/CV-USTC-ZhenyuBo.pdf).
 You can contact me through [Email](mailto:bzy1117@mail.ustc.edu.cn).
 
 Honors
@@ -40,7 +40,7 @@ It is one of my curriculum projects and can be accessed via [Code-Assistant](htt
 
 **Motivation:**
 * LLMs lack awareness of untrained repositories, making it difficult to retrieve code information relevant to current needs.
-* Code repositories often contain massive files, and token limits combined with models' constrained long-context comprehension prevent inputting all information as prompts. 
+* Code repositories often contain massive files, and token limits combined with LLMs' constrained long-context comprehension prevent inputting all information as prompts. 
 
 **Solution:**
 My strategy is using RAG to provide precise information which LLMs exactly need to improve code awareness of LLM and reduce context overhead. To be more specific yet concise, I construct a function call dependency table for files in the code repository, then extract all relevant functions based on user requests and inject them as prompts into LLMs.
